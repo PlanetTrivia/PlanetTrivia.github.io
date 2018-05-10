@@ -478,6 +478,16 @@
       "<button id='b3' onclick='clicked3()'></button>" + "</div>";
 
 
+  document.getElementById("title").addEventListener("click", playSong);
+
+  function playSong(){
+
+      var audio = new Audio ('song.mp3');
+      audio.play();
+
+  }
+  playSong();
+  
   function start1() {
     qu = arrayQ[count];
     b1 = arrayA[count][0];
