@@ -14,9 +14,9 @@
 	Robert St. Louis 		A01045783
 	Kyle Dulay			A00964012
 	
-### Percent Complete
+### PERCENT COMPLETE
 	100%
 	
-### Known Bugs
+### KNOWN BUGS
 
-### Project Challenges
+### PROJECT CHALLENGES
