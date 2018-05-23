@@ -1,4 +1,4 @@
-var arrayQ = ["How many water resevoirs are there in Vancouver?", "How much water does a human use daily?","When brushing your teeth you should?","What percent of freshwater is trapped in glaciers?","What percent of Earth’s water is frozen and unusable?","How much water is needed to grow a day’s food for a family of four?","How much does water expand when it’s frozen?","How many liters of water does it take to fill an average bathtub?","How much water do outdoor pools lose each month due evaporation?","How much water is on the Earth?","How long should you water your lawn for?","You should use the dishwasher when...","What country has the most fresh water in the world?","What Country uses the most water in the world?","Which country has the least fresh water in the world?","What is a drought?","What country has the cleanest tap water?","What country sells the most bottled water?","What country produces the most bottled water?","How much water is used when flushing a toilet?","How much water does a 5 minute shower use?","What percent of food never gets eaten worldwide?","What food gets wasted the most?","How much food does an average person waste a day?","What percent of food waste in Vancouver is avoidable?","How many tonnes of avoidable food waste does Vancouver produce a year?","How much does wasted food cost a Vancouver household per year?"];
+var arrayQ = ["How many water resevoirs are there in Vancouver?", "How much water does a human use daily?","When brushing your teeth you should?","What percent of freshwater is trapped in glaciers?","What percent of Earthâ€™s water is frozen and unusable?","How much water is needed to grow a dayâ€™s food for a family of four?","How much does water expand when itâ€™s frozen?","How many liters of water does it take to fill an average bathtub?","How much water do outdoor pools lose each month due evaporation?","How much water is on the Earth?","How long should you water your lawn for?","You should use the dishwasher when...","What country has the most fresh water in the world?","What Country uses the most water in the world?","Which country has the least fresh water in the world?","What is a drought?","What country has the cleanest tap water?","What country sells the most bottled water?","What country produces the most bottled water?","How much water is used when flushing a toilet?","How much water does a 5 minute shower use?","What percent of food never gets eaten worldwide?","What food gets wasted the most?","How much food does an average person waste a day?","What percent of food waste in Vancouver is avoidable?","How many tonnes of avoidable food waste does Vancouver produce a year?","How much does wasted food cost a Vancouver household per year?"];
   var arrayA = [["2","3","5"],["1000 Litres","570 Litres","330 Litres"],["Turn on the tap","Turn off the tap", "Flush the toilet"],["69%","40%","95%"],["2%", "75%","20%"],["260,000 L","550 L","55,000 L"],["9%","18%","65%"],["200 L","100 L","265 L"],["1000 L" ,"3785 L","50 L"],["2.5 Billion L","500,000 L","1.2 Trillion L"],["1 hr","5 hrs","15 hrs"],["It is full","One thing is dirty","You feel like it"],["Brazil","Canada","United States"],["United States","China","Russia"],["Kuwait/Bahamas","Germany","South Africa"],["A drink","A long period of low rainfall","A tasty doughnut"],["Canada","France","Switzerland"],["China","United States","Russia"],["Canada","China","United States"],["8 L","12 L","2 L"],["50 L","200 L","500 L"],["5%","30%","20%"],["Fruits and Veggies","Milk","Pizza"],["400 grams", "200 grams","650 grams"],["10%","25%","50%"],["100,000","10,000","50,000"],["$500","$700","$900"]];
   var arrayCorrect = ["3","330 Litres","Turn off the tap","69%","2%","260,000 L","9%","265 L","3785 L","1.2 Trillion L","1 hr","It is full","Brazil","China","Kuwait/Bahamas","A long period of low rainfall","Switzerland","China","United States","8 L","200 L","30%","Fruits and Veggies","400 grams","50%","100,000","$700"];
   var qu;
@@ -60,7 +60,7 @@ var arrayQ = ["How many water resevoirs are there in Vancouver?", "How much wate
 
   function correct(){
     var d = document.getElementById("background");
-    var corr = "<p id='corr'>Correct &#10003;</p><p id='correctAns'>Answer: " + arrayCorrect[count-1] + "</p>";
+    var corr = "<p id='corr'>Correct &#10003;</p><p id='correctAns'>Correct Answer: " + arrayCorrect[count-1] + "</p>";
     d.style.backgroundColor = "lightgreen";
     d.innerHTML = corr;
     setTimeout(correct2,3000);
@@ -82,7 +82,7 @@ var arrayQ = ["How many water resevoirs are there in Vancouver?", "How much wate
   }
 
   function incorrect(){
-    var incorr = "<p id='incorr'>Incorrect &#10006;</p><p id='correctAns'>Answer: " + arrayCorrect[count-1] + "</p>";
+    var incorr = "<p id='incorr'>Incorrect &#10006;</p><p id='correctAns'>Correct Answer: " + arrayCorrect[count-1] + "</p>";
     var d = document.getElementById("background");
     d.style.backgroundColor = "#ff3333";
     d.innerHTML = incorr;
@@ -106,7 +106,7 @@ var arrayQ = ["How many water resevoirs are there in Vancouver?", "How much wate
 
   function timesUp(){
     var d = document.getElementById("background");
-    var timeUp = "<p id='timesUp'>Times Up 	&#128337;</p><p id='correctAns'>Answer: " + arrayCorrect[count-1] + "</p>";
+    var timeUp = "<p id='timesUp'>Times Up 	&#128337;</p><p id='correctAns'>Correct Answer: " + arrayCorrect[count-1] + "</p>";
     d.style.backgroundColor = "#ff3333";
     d.innerHTML = timeUp;
     setTimeout(timesUp2,3000);
