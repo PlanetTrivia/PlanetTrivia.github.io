@@ -323,7 +323,7 @@ var arrayQ = ["How many water resevoirs are there in Vancouver?", "How much wate
         var s = document.getElementById("fullbody");
         s.innerHTML = table;
 
-        s.style.backgroundImage = "url('g.gif')";
+        s.style.backgroundImage = "url('../img/g.gif')";
       });
     }
   }
