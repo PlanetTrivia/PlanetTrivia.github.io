@@ -199,7 +199,6 @@ var arrayQ = ["How many water resevoirs are there in Vancouver?", "How much wate
   }
 
   function startGame(){
-    v = rand + 1;
     var readyString = v.toString();
     firebaseRef.child(readyString).set({"admin" : {"teacher" : "started game"}});
     document.getElementById('start').innerHTML = "Game has started";
